@@ -36,7 +36,7 @@ def knn_vc(
         pretrained, progress, prematched, device, ckpt_path=hifigan_ckpt
     )
     wavlm = wavlm_large(pretrained, progress, device, ckpt_path=wavlm_ckpt)
-    knnvc = KNeighborsVC(wavlm, hifigan, hifigan_cfg, device)
+    knnvc = KNeighborsVC(wavlm, hifigan, hifigan_cfg, layer, device)
     return knnvc
 
 
