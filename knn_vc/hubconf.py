@@ -10,10 +10,10 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
-from wavlm.WavLM import WavLM, WavLMConfig
-from hifigan.models import Generator as HiFiGAN
-from hifigan.utils import AttrDict
-from matcher import KNeighborsVC
+from .wavlm.WavLM import WavLM, WavLMConfig
+from .hifigan.models import Generator as HiFiGAN
+from .hifigan.utils import AttrDict
+from .matcher import KNeighborsVC
 
 
 WAVLM_CKPT = "https://github.com/bshall/knn-vc/releases/download/v0.1/WavLM-Large.pt"
