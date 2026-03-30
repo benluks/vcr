@@ -1,0 +1,7 @@
+model:
+  wavlm_ckpt: /Users/ben/.cache/torch/hub/checkpoints/WavLM-Large.pt
+  hifigan_ckpt: /Users/ben/.cache/torch/hub/checkpoints/prematch_g_02500000.pt
+  device: mps
+  layer: 22
+
+output_dir: !ref output/wavlm_large_layer_<model[layer]>
