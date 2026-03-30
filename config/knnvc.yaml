@@ -1,7 +1,12 @@
 model:
   wavlm_ckpt: /Users/ben/.cache/torch/hub/checkpoints/WavLM-Large.pt
   hifigan_ckpt: /Users/ben/.cache/torch/hub/checkpoints/prematch_g_02500000.pt
-  device: mps
+  device: cuda
   layer: 22
+
+data: !new:dataset.SpeechDataset
+  datafile: data/train-clean-100.txt
+  target_sr: 16000
+  load: false
 
 output_dir: !ref output/wavlm_large_layer_<model[layer]>
