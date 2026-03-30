@@ -9,7 +9,7 @@ from knn_vc.hubconf import knn_vc as load_knn_vc
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("cfg", required=True)
+    parser.add_argument("cfg")
     parser.add_argument("overrides", nargs="*")
 
     args = parser.parse_args()
