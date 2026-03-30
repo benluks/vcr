@@ -15,7 +15,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     with open(args.cfg) as f:
-        cfg = load_hyperpyyaml(args.cfg, overrides=args.overrides)
+        cfg = load_hyperpyyaml(f, overrides=args.overrides)
 
     model = load_knn_vc(**cfg["model"])
     dataset = cfg["dataset"]
