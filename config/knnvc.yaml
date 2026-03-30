@@ -1,6 +1,6 @@
 model:
-  wavlm_ckpt: /Users/ben/.cache/torch/hub/checkpoints/WavLM-Large.pt
-  hifigan_ckpt: /Users/ben/.cache/torch/hub/checkpoints/prematch_g_02500000.pt
+  wavlm_ckpt: /cfs/home/u036742/.cache/torch/hub/checkpoints/WavLM-Large.pt
+  hifigan_ckpt: /cfs/home/u036742/.cache/torch/hub/checkpoints/prematch_g_02500000.pt
   device: cuda
   layer: 22
 
