@@ -18,7 +18,7 @@ if __name__ == "__main__":
         cfg = load_hyperpyyaml(f, overrides=args.overrides)
 
     model = load_knn_vc(**cfg["model"])
-    dataset = cfg["dataset"]
+    dataset = cfg["data"]
 
     out_path = Path(cfg["output_dir"])
     out_path.mkdir(parents=True, exist_ok=True)
